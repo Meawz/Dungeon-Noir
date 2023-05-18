@@ -1,0 +1,24 @@
+[gd_scene load_steps=3 format=3 uid="uid://kgw2hxkf53gr"]
+
+[ext_resource type="PackedScene" uid="uid://dmledt7v6ux2k" path="res://enemy.tscn" id="1_265q6"]
+[ext_resource type="Texture2D" uid="uid://cdidkat6esf61" path="res://MobileRPG Resources/Images/EvilEye.png" id="2_lqcgb"]
+
+[node name="EvilEye" instance=ExtResource("1_265q6")]
+position = Vector2(-46, -33)
+hp = 30
+Damage = 5
+
+[node name="Sprite" parent="." index="0"]
+texture = ExtResource("2_lqcgb")
+
+[node name="HPLabel" parent="." index="1"]
+offset_top = 3.0
+offset_bottom = 16.0
+text = "30hp"
+
+[node name="HoverInfo" parent="." index="3"]
+offset_left = 29.0
+offset_top = 14.0
+offset_right = 62.0
+offset_bottom = 46.0
+description = "A evil looking eye."

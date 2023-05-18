@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3 uid="uid://bp45b7cd0cuj6"]
+
+[ext_resource type="PackedScene" uid="uid://bxrkt40ahm2lu" path="res://action_button.tscn" id="1_utw10"]
+[ext_resource type="Script" path="res://heal_action_button.gd" id="2_gps4r"]
+
+[node name="HealActionButton" instance=ExtResource("1_utw10")]
+text = "Heal"
+script = ExtResource("2_gps4r")
+
+[node name="HoverInfo" parent="." index="0"]
+mouse_filter = 1
+description = "Heal
+Heals 5 health."
